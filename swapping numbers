@@ -1,0 +1,17 @@
+#include <stdio.h>
+main()
+{
+    printf("Hi! What's your name? ...\n");
+    char name[15];
+    scanf("%s",&name);
+    printf("This is the project of swapping 2 numbers without using temporary variable done by:%s \n");
+    int a,b;
+    printf("enter any two numbers with space %s!\n", name);
+    scanf("%d %d",&a,&b);
+    printf("before swap: a= %d, b= %d\n",a,b);
+    a=a+b; //(40+50 = 90)
+    b=a-b; //(90-50 = 40)
+    a=a-b; //(90-40 = 50)
+    printf("after swap: a= %d, b=%d",a,b);
+    return 0;
+}
