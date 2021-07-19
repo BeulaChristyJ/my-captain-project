@@ -1,0 +1,29 @@
+#include<stdio.h>
+main()
+{
+	printf("Hey buddy! We're glad to serve you\n");
+	printf("Please pick up an item: \n1. Pizza\n2. Burger\n3. Pasta\n4. French fries\n5. Sandwich\n");
+	int choice;
+	scanf("%d",&choice);
+	
+	switch(choice)
+	{
+		case 1: 
+			printf("You've chosen an appetizing dish\n -----*Food item: Pizza*-----\n -----*Price: Rs.239*-----");
+			break;
+		case 2:
+			printf("You've chosen a delicious dish\n -----*Food item: Burger*-----\n -----*Price: Rs.129*-----");
+			break;
+		case 3: 
+			printf("You've chosen a delectable food\n -----*Food item: Pasta*-----\n -----*Price: Rs.179*-----");
+			break;
+		case 4:
+			printf("You've chosen an ever loving fries\n -----*Food item: French fries*-----\n -----*Price: Rs.99*-----");
+			break;
+		case 5:
+			printf("You've chosen the full-flavoured dish\n -----*Food item: Sandwich*-----\n -----*Price: Rs.149*-----");
+			break;
+		default: printf("Invalid choice\n Please enter any number between 1 to 5");
+	}
+	return 0;	
+}
